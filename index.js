@@ -8,11 +8,6 @@ const port = process.env.PORT || 80;
 
 // GET /
 app.get('/', async (req, res) => {
-    res.send('Hello World ooo');
-})
-
-// GET /pingpong
-app.get('/pingpong', async (req, res) => {
     res.send(process.env.info);
 })
 
